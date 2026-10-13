@@ -43,6 +43,12 @@ npx rayfin login
 npx rayfin login --tenant <tenant-id>
 ```
 
+> **No OS keychain (for example, lab VMs)?** If you see `OS keychain is not available and plaintext token storage is not enabled`, allow file-based token storage before you sign in, and then run `npx rayfin login` again:
+>
+> ```powershell
+> $env:RAYFIN_ENCRYPTION_FALLBACK_ENABLED = "true"
+> ```
+
 ### 3. Deploy the backend and the app
 
 ```bash
