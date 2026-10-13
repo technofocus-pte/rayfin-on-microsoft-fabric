@@ -1,4 +1,5 @@
-import { blob, authenticated } from '@microsoft/rayfin-core';
+import { authenticated } from '@microsoft/rayfin-core';
+import { blob } from '@microsoft/rayfin-core/experimental';
 
 /**
  * Storage folder for recipe cover images.
@@ -10,3 +11,4 @@ import { blob, authenticated } from '@microsoft/rayfin-core';
 @blob()
 @authenticated('*')
 export class RecipeImage {}
+
